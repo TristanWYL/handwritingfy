@@ -1,0 +1,16 @@
+{
+  "name": "handwriting-style",
+  "version": "1.0.0",
+  "main": "popup.js",
+  "author": "Tristan",
+  "license": "MIT",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/styles.css -o ./dist/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.2",
+    "flowbite": "^1.5.1",
+    "tailwindcss": "^3.1.7"
+  }
+}
