@@ -66,4 +66,43 @@ const applyFontForAll = (font) => {
   fontStyle.appendChild(document.createTextNode(`* {font-family: '${font}' !important; }`));
   document.head.appendChild(fontStyle);
 }
+
+const handwritingfySVG = () => {
+  let svgs = document.querySelectorAll("svg");
+  // prepare the filter
+  let filter = document.createElementNS(
+    "http://www.w3.org/2000/svg",
+    "filter"
+  );
+  filter.setAttribute("id", "displacementFilter");
+  const feTurbulence = document.createElementNS(
+    "http://www.w3.org/2000/svg",
+    "feTurbulence"
+  );
+  feTurbulence.setAttribute("type", "fractalNoise");
+  feTurbulence.setAttribute("baseFrequency", "0.05");
+  feTurbulence.setAttribute("result", "noise");
+  filter.appendChild(feTurbulence);
+  const feDisplacementMap = document.createElementNS(
+    "http://www.w3.org/2000/svg",
+    "feDisplacementMap"
+  );
+  feDisplacementMap.setAttribute("in2", "noise");
+  feDisplacementMap.setAttribute("in", "SourceGraphic");
+  feDisplacementMap.setAttribute("scale", "5");
+  feDisplacementMap.setAttribute("xChannelSelector", "R");
+  feDisplacementMap.setAttribute("yChannelSelector", "G");
+  filter.appendChild(feDisplacementMap);
+
+  // inject the filter
+  svgs.forEach((svg) => {
+    svg.appendChild(filter);
+    for (let i = 0; i < svg.children.length; i++) {
+      svg.children[i].setAttribute(
+        "style",
+        "filter: url(#displacementFilter)"
+      );
+    }
+  });
+}
 // export { availableFontFamilies, loadHeadLinks };

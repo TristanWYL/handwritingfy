@@ -1,4 +1,4 @@
-// import { availableFontFamilies, loadHeadLinks } from './prepareFonts'
+// import { availableFontFamilies, loadHeadLinks } from './preLoad'
 
 loadHeadLinks()
 
@@ -25,13 +25,13 @@ const setupSelect = () => {
   })
 }
 
-const setupToggle = () => {
-  let toggle = document.getElementById('toggle')
-  chrome?.storage?.sync?.get('toggle', function ({ toggle: enabled }) {
+const setupToggle = (toggleId, varName) => {
+  let toggle = document.getElementById(toggleId)
+  chrome?.storage?.sync?.get(varName, function ({ [varName]: enabled }) {
     toggle.checked = enabled ?? true
   })
   toggle.addEventListener('change', (e) => {
-    chrome?.storage?.sync?.set({ toggle: e.target.checked })
+    chrome?.storage?.sync?.set({ [varName]: e.target.checked })
   })
 }
 
@@ -43,5 +43,6 @@ const setupRefreshBtn = () => {
 }
 
 setupSelect()
-setupToggle()
+setupToggle('toggle-text', 'toggleTextStyle')
+setupToggle('toggle-svg', 'toggleSvgStyle')
 setupRefreshBtn()

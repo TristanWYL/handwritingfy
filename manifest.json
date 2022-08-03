@@ -29,7 +29,7 @@
       ],
       "run_at": "document_idle",
       "js": [
-        "/src/prepareFonts.js",
+        "/src/preLoad.js",
         "/src/handwritingfy.js"
       ]
     }
