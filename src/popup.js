@@ -1,4 +1,4 @@
-// import { availableFontFamilies, loadHeadLinks } from './preLoad'
+import { availableFontFamilies, loadHeadLinks } from './preLoad'
 
 loadHeadLinks()
 

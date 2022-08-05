@@ -1,18 +1,19 @@
 {
-  "name": "handwriting-style",
+  "name": "handwritingfy",
   "version": "1.0.0",
-  "main": "popup.js",
   "author": "Tristan",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "build-css": "tailwindcss -i ./src/styles.css -o ./dist/output.css --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.2",
     "flowbite": "^1.5.1",
     "tailwindcss": "^3.1.7",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "vite": "^3.0.0"
   }
 }
