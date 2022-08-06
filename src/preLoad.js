@@ -98,11 +98,8 @@ const handwritingfySVG = () => {
   svgs.forEach((svg) => {
     svg.appendChild(filter);
     for (let i = 0; i < svg.children.length; i++) {
-      svg.children[i].setAttribute(
-        "style",
-        "filter: url(#displacementFilter)"
-      );
+      svg.children[i].style.filter = "url(#displacementFilter)"
     }
   });
 }
-// export { availableFontFamilies, loadHeadLinks };
+export { availableFontFamilies, loadHeadLinks, applyFontForAll, handwritingfySVG };

@@ -3,10 +3,11 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   build: {
+    emptyOutDir: false,
+    // sourcemap: true,
     rollupOptions: {
       input: {
-        popup: resolve(__dirname, 'src/popup.html'),
-        chromeExtension: resolve(__dirname, 'handwritingfy.js')
+        'index': resolve(__dirname, 'index.html'),
       }
     }
   }

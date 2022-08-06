@@ -1,3 +1,5 @@
+import { loadHeadLinks, applyFontForAll, handwritingfySVG } from './preLoad'
+
 loadHeadLinks()
 chrome.storage.sync.get(null, function ({ font, toggleTextStyle, toggleSvgStyle }) {
     if (toggleTextStyle ?? true) {

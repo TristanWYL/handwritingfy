@@ -1,6 +1,6 @@
 {
   "name": "Handwritingfy",
-  "description": "Make the webpages appear in a handwritten style.",
+  "description": "Format the webpages in a handwritten style.",
   "version": "1.0",
   "manifest_version": 3,
   "permissions": [
@@ -8,19 +8,19 @@
     "scripting"
   ],
   "action": {
-    "default_popup": "/src/popup.html",
+    "default_popup": "index.html",
     "default_icon": {
-      "16": "/images/logo.png",
-      "32": "/images/logo.png",
-      "48": "/images/logo.png",
-      "128": "/images/logo.png"
+      "16": "logo.png",
+      "32": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
     }
   },
   "icons": {
-    "16": "/images/logo.png",
-    "32": "/images/logo.png",
-    "48": "/images/logo.png",
-    "128": "/images/logo.png"
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
   },
   "content_scripts": [
     {
@@ -29,8 +29,7 @@
       ],
       "run_at": "document_end",
       "js": [
-        "/src/preLoad.js",
-        "/src/handwritingfy.js"
+        "handwritingfy.chrome.iife.js"
       ]
     }
   ]

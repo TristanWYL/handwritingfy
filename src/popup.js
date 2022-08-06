@@ -1,4 +1,5 @@
 import { availableFontFamilies, loadHeadLinks } from './preLoad'
+import './index.css'
 
 loadHeadLinks()
 

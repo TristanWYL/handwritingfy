@@ -3,17 +3,29 @@
   "version": "1.0.0",
   "author": "Tristan",
   "license": "MIT",
+  "description": "A simple tool to make webpages seem handwritten!",
+  "keywords": [
+    "handwriting",
+    "handwritten",
+    "xkcd"
+  ],
   "type": "module",
   "scripts": {
-    "build-css": "tailwindcss -i ./src/styles.css -o ./dist/output.css --watch",
+    "build": "(rm -R ./dist/* || true) && yarn build-chrome-popup && yarn build-chrome-exec && yarn build-script && yarn copy",
+    "copy": "cp images/logo.png dist/logo.png && cp manifest.json dist/manifest.json",
+    "build-chrome-popup": "vite build --config vite.config.popup.js ",
+    "build-chrome-exec": "vite build --config vite.config.chrome.js",
+    "build-script": "vite build --config vite.config.script.js",
     "dev": "vite",
-    "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.2",
+    "autoprefixer": "^10.4.8",
+    "cross-env": "^7.0.3",
     "flowbite": "^1.5.1",
     "tailwindcss": "^3.1.7",
     "vite": "^3.0.0"
-  }
+  },
+  "dependencies": {}
 }
