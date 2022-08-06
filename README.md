@@ -29,3 +29,7 @@ TODO:
 # Credit
 
 This chrome extension is inspred by [this repository](https://github.com/timqian/chart.xkcd). Credit to the author @timqian.
+
+# Other topics
+
+## How to publish a javascaript module

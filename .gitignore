@@ -1,2 +1,3 @@
-dist/
+dist/*
+!dist/handwritingfy.script.iife.js
 node_modules/
