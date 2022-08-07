@@ -82,7 +82,7 @@ As vitejs does not support configs of building htmls and javascript modules in t
 
 #### How to configure build for html
 
-Vite's documentation recommends to use `rollupOptions` for building html entries,
+Vitejs recommends to use `rollupOptions` for building html entries,
 
 ```js
 rollupOptions: {
@@ -96,7 +96,7 @@ The full config file for HandwritingFy could be found at [vite.config.popup.js](
 
 #### How to configure build for javascript
 
-Vite's documentation recommends to use library mode for building javascript entries,
+Vitejs recommends to use library mode for building javascript entries,
 
 ```js
 lib: {
