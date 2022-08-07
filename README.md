@@ -96,7 +96,7 @@ The full config file for HandwritingFy could be found at [vite.config.popup.js](
 
 #### How to configure build for javascript
 
-Vitejs recommends to use library mode for building javascript entries,
+Vitejs recommends to use [library mode](https://vitejs.dev/guide/build.html#library-mode) for building javascript entries,
 
 ```js
 lib: {
