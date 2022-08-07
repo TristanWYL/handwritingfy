@@ -34,7 +34,8 @@ Currently this tool has been published as a chrome extension, and you can instal
 
 Within this extension, around 20 handwriting styles can be played around.
 
-The following screenshot is the extension console (popup).
+The following screenshot is the extension console (popup), from which you can decide whether handwritingfying text and/or svg of webpages. There have also been around 20 styles available for texts.
+
 <img src="images/popup.png" width="300px" alt="extension console"/>
 
 You can also check out the demo video:
@@ -49,9 +50,9 @@ If you want to integrate this handwriting style into your own webpage, you can p
 <script src="https://cdn.jsdelivr.net/gh/TristanWYL/handwritingfy@1.0.1/dist/handwritingfy.script.iife.min.js"></script>
 ```
 
-# Credit
+# Acknowledgement
 
-This piece of work is inspred by [this repository](https://github.com/timqian/chart.xkcd). Credit to the author @timqian.
+This piece of work is inspred by [this repository](https://github.com/timqian/chart.xkcd). Credits to its author @timqian.
 
 # Other topics
 
