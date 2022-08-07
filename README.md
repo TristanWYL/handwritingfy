@@ -129,8 +129,10 @@ Now we should copy `manifest.json` and related assests like icons and images etc
 Configure a script into `package.json`, so that we can run it with `yarn copy`.
 
 ```json
-scripts: {
-  "copy": "cp images/logo.png dist/logo.png && cp manifest.json dist/manifest.json"
+{
+  "scripts": {
+    "copy": "cp images/logo.png dist/logo.png && cp manifest.json dist/manifest.json"
+  }
 }
 ```
 
@@ -139,7 +141,9 @@ scripts: {
 Configure a wrapping up script into `package.json`, so that we can do all above work with a simple command `yarn build`,
 
 ```json
-scripts: {
-  "build": "(rm -R ./dist/* || true) && yarn build-chrome-popup && yarn build-chrome-exec && yarn build-script && yarn copy"
+{
+  "scripts": {
+    "build": "(rm -R ./dist/* || true) && yarn build-chrome-popup && yarn build-chrome-exec && yarn build-script && yarn copy"
+  }
 }
 ```
