@@ -5,9 +5,9 @@
 
 # Overview
 
-Tired of webpages with 'perfect' typography, and pictures with all perfect lines/curves? Want to make them more natural, or sketchy? Give `HandwritingFy` a try by a click.
+Tired of webpages with 'perfect' typography, and pictures with all perfect lines/curves? Want to make them more natural, or sketchy? Give `HandwritingFy` a try by a few clicks.
 
-`HandwritingFy` is a small toy which eanbles to change the style of your webpage into a completely handwritten one like below screenshot,
+`HandwritingFy` is a small toy which eanbles to change the style of webpages into handwritten like below screenshot,
 
 ![xx](images/demo.png)
 
@@ -28,7 +28,7 @@ yarn build
 
 ## chrome extension
 
-Currently this tool has been published as a chrome extension, and you can install it by searching `handwritingfy` at [chrome web store](https://chrome.google.com/webstore/category/extensions?hl=en-US) or directly clicking on [this link](TODO:).
+Currently this tool has been published as a chrome extension, and you can install it at [chrome web store](https://chrome.google.com/webstore/category/extensions/TODO:....?hl=en-US).
 
 The following screenshot is the extension console (popup), from which you can decide whether handwritingfying text and/or svg of webpages. There have also been around 20 styles available for texts.
 
@@ -38,9 +38,9 @@ You can also check out the demo video:
 
 [![HandwritingFy](https://img.youtube.com/vi/YSWdXLHIoOA/0.jpg)](https://www.youtube.com/watch?v=YSWdXLHIoOA)
 
-## Javascript module
+## Javascript module for developers
 
-If you want to integrate this handwriting style into your own webpage, you can put the following script tag at the end of the `body` tag of your html file. Refer to [example](example/example.html) for details.
+If you want to integrate this handwriting style into your own webpage, simply put the following script tag at the end of the `body` tag of your html file. Refer to [example](example/example.html) for details.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/TristanWYL/handwritingfy@1.0.1/dist/handwritingfy.script.iife.min.js"></script>
@@ -74,7 +74,7 @@ Different from average web applications, a chrome extension can have more than o
 
 Extensions could have more entries, such as the option panel etc, but we do not have it here. After you go throough the following details, you will know how to add as many entries as you want.
 
-### Dev
+<!-- ### Dev -->
 
 ### Build
 
