@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./images/logo.png" style="width: 100px;"><br>
+  <img src="./images/logo.png" style="width: 160px;"><br>
   <img src="./images/handwritingfy.png" style="width: 250px;">
 </div>
 
@@ -11,7 +11,7 @@ Tired of webpages with 'perfect' typography, and pictures with all perfect lines
 
 ![xx](images/demo.png)
 
-# How
+<!-- # How
 
 ```bash
 # install dependencies
@@ -22,7 +22,7 @@ yarn dev
 
 # Build all
 yarn build
-```
+``` -->
 
 # Production
 
