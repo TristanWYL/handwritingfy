@@ -57,7 +57,7 @@ This piece of work is inspred by [this repository](https://github.com/timqian/ch
 Use [jsdelivr.com](https://www.jsdelivr.com/?docs=gh) and github to host the js module.
 
 1. [Create a github release with a **version number**](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release),
-2. Then the CDNed file could be accessible at https://cdn.jsdelivr.net/gh/TristanWYL/handwritingfy@\*\*version_number\*\*/dist/handwritingfy.script.iife.min.js.
+2. Then the CDNed file could be accessible at https://cdn.jsdelivr.net/gh/TristanWYL/handwritingfy@version_number/dist/handwritingfy.script.iife.min.js.
 
    **NOTE**: Replace **version number** with the release number.
 
