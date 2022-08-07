@@ -6,6 +6,7 @@
 # Overview
 
 Tired of webpages with 'perfect' typography, and pictures with all perfect lines/curves? Want to make them more realistic? Give `HandwritingFy` a try by a click.
+
 TODO: Wording, refer to xkcd.chart
 
 `HandwritingFy` is a small toy which eanbles to change the style of your webpage into a completely handwriting one.
@@ -32,7 +33,13 @@ yarn build
 Currently this tool has been published as a chrome extension, and you can install it with [this link](TODO:).
 
 Within this extension, around 20 handwriting styles can be played around.
-TODO: Screenshot
+
+The following screenshot is the extension console (popup).
+<img src="images/popup.png" width="300px" alt="extension console"/>
+
+You can also check out the demo video:
+
+[![HandwritingFy](https://img.youtube.com/vi/YSWdXLHIoOA/0.jpg)](https://www.youtube.com/watch?v=YSWdXLHIoOA)
 
 ## js cdn
 
@@ -44,7 +51,7 @@ If you want to integrate this handwriting style into your own webpage, you can p
 
 # Credit
 
-This chrome extension is inspred by [this repository](https://github.com/timqian/chart.xkcd). Credit to the author @timqian.
+This piece of work is inspred by [this repository](https://github.com/timqian/chart.xkcd). Credit to the author @timqian.
 
 # Other topics
 
@@ -53,4 +60,6 @@ This chrome extension is inspred by [this repository](https://github.com/timqian
 Use [jsdelivr.com](https://www.jsdelivr.com/?docs=gh) and github to host the js module.
 
 1. [Create a github release with a **version number**](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release),
-2. Then the CDNed file could be accessible at https://cdn.jsdelivr.net/gh/TristanWYL/handwritingfy@\*\*version_number\*\*/dist/handwritingfy.script.iife.min.js. **NOTE**: Replace **version number** with the release number.
+2. Then the CDNed file could be accessible at https://cdn.jsdelivr.net/gh/TristanWYL/handwritingfy@\*\*version_number\*\*/dist/handwritingfy.script.iife.min.js.
+
+   **NOTE**: Replace **version number** with the release number.

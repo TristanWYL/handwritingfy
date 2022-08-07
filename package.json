@@ -17,6 +17,7 @@
     "build-chrome-exec": "vite build --config vite.config.chrome.js",
     "build-script": "vite build --config vite.config.script.js",
     "dev": "vite",
+    "dev-chrome-exec": "vite build --config vite.config.chrome.js --watch",
     "preview": "vite preview"
   },
   "devDependencies": {
