@@ -28,7 +28,9 @@ yarn build
 
 ## chrome extension
 
-Currently this tool has been published as a chrome extension, and you can install it at [chrome web store](https://chrome.google.com/webstore/category/extensions/TODO:....?hl=en-US).
+<!-- Currently this tool has been published as a chrome extension, and you can install it at [chrome web store](https://chrome.google.com/webstore/category/extensions/TODO:....?hl=en-US). -->
+
+Currently we are seeking to publish the extension, and are waiting for the review of Chrome.
 
 The following screenshot is the extension console (popup), from which you can decide whether handwritingfying text and/or svg of webpages. There have also been around 20 styles available for texts.
 
